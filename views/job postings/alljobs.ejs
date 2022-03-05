@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head') %>
+</head>
+<body class="container">
+<header>
+  <%- include('../partials/header') %>
+</header>
+<br>
+<div class="text-right">
+<a href="/newjob" class="btn btn-primary">Post a Job</a>
+</div>
+<br>
+
+<% jobs.forEach(function(j){ %>
+  <div class="card">
+    <div class="card-body">
+        <h1><%= j.alumniName  %></h1>
+        <h3><%= j.roleName  %></h3>
+        <h4><a href="<%= j.roleLink%>">Apply</a></h4>
+        <p><%= j.roleDescription  %></p>
+        <h4><%= j.contactEmail  %></h4>
+      </div>
+    </div>
+  <% }) %> 
+
+</body>
+<footer>
+    <%- include('../partials/footer') %>
+  </footer>
+</html>

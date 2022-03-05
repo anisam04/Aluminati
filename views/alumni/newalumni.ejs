@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head') %>
+  <body class="container">
+<header>
+  <%- include('../partials/header') %>
+</header>
+<h3>Add a Alumni</h3>
+
+<form action="/allalumni" method="POST">
+  <div class="form-group">
+    <label>Name:</label>
+    <input name="alumniName" type="text" required class="form-control" /> <br />
+    <label>Cohort:</label>
+    <select name="cohortName" class="form-control">
+      <option value="SEI">SEI</option>
+      <option value="UX Design">UX Design</option>
+      <option value="Data Science">Data Science</option>
+    </select>  
+    <br>
+    <label>Batch </label>
+    <input name="batchName" type="text" required class="form-control" /> <br />
+    <label>Designation:  </label>
+    <input name="designation" type="text"  required class="form-control" /> <br />
+    <label>Company:  </label>
+    <input name="company" type="text"  required class="form-control" /> <br />
+    <label>Contact Number:  </label>
+    <input name="contactNumber" type="Number"  required  class="form-control"/> <br />
+    <label>Contact Email:  </label>
+    <input name="contactEmail" type="text"  required class="form-control" /> <br />
+  </div>
+    <input type="submit" value="Add Alumni!" />
+   <%# EJS COMMENTING STYLE %>
+  </form>
+
+<footer>
+  <%- include('../partials/footer') %>
+</footer>
+
+</body>
+</html>

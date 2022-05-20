@@ -1,4 +1,4 @@
-const alumniSchema = require('../models/alumnimodel');
+// const alumniSchema = require('../models/alumnimodel');
 const jobsSchema = require('../models/jobsmodel');
 
 async function getAllJobs(req, res) {
